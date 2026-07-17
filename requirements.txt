@@ -1,8 +1,9 @@
-flask==2.3.2
+flask==2.2.3
 requests==2.31.0
-pandas==2.2.0
+pandas==1.5.3
 openpyxl==3.1.2
 waitress==2.1.2
-urllib3==2.0.4
-gunicorn==21.2.0
+urllib3==1.26.15
+gunicorn==20.1.0
 setuptools
+wheel
