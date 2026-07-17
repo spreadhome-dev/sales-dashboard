@@ -1,0 +1,1 @@
+web: gunicorn --worker-class sync --timeout 300 --workers 1 sales_dashboard_live:app

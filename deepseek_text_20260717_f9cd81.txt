@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+base_stock.csv
+.DS_Store
+.env
+venv/
+env/
+*.db
+*.log
