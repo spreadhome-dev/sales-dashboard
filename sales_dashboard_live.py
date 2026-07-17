@@ -293,9 +293,11 @@ document.querySelectorAll('.bs-input').forEach(inp => {{
 </body>
 </html>"""
 
+# ── Run the app ──────────────────────────────────────────────────
 if __name__ == "__main__":
-    print(f"\nStarting live dashboard on http://localhost:{PORT}")
-    print(f"Other PCs on the network can open  http://<this-pc-ip>:{PORT}\n")
-
-from waitress import serve
-serve(app, host="0.0.0.0", port=8050)
+    # For local development only
+    app.run(host="0.0.0.0", port=PORT, debug=True)
+else:
+    # For production (Gunicorn on Render)
+    # Gunicorn will handle the server, we just need the app object
+    pass
